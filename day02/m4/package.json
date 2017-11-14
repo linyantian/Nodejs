@@ -1,0 +1,11 @@
+{
+  "name": "m4",
+  "version": "1.0.0",
+  "description": "\"this is m4\"",
+  "main": "m4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "teacher",
+  "license": "MIT"
+}
