@@ -4,7 +4,7 @@
 
 const fs = require('fs');
 
-fs.stat(__filename,(err,stat)=>{
+fs.stat(__filename,(err,stat)=>{ //¶ÁÈ¡×´Ì¬
     if(err) throw err;
     console.log(stat.isFile());
 });

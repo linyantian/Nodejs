@@ -3,15 +3,16 @@
  */
 const http = require('http');
 
-let ip = '122.222.31.45'
+let ip = '166.111.5.207'
 let options = {
-    protocal:'http:',
     host:'ip.taobao.com',
     path:'/service/getIpInfo.php?ip='+ip
-}
-
-http.request(options,(res)=>{
-    res.on('data',(result)=>{
-        console.log(result);
-    });
+};
+//发送请求
+let request = http.request(options,(res)=>{
+    res.on('data',(buffer)=>{
+        console.log(JSON.parse(buffer.toString()));
+    })
 });
+//加上请求结束
+request.end();

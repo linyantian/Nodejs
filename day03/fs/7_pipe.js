@@ -8,7 +8,7 @@ const fs = require('fs');
 let reader = fs.createReadStream(__filename);
 let writer =  fs.createWriteStream('./write.txt');
 
-reader.pipe(writer);
+reader.pipe(writer); //¸´ÖÆÎÄ¼þ
 
 reader.on('end',()=>{
     console.log('copy done.');

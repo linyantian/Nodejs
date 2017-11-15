@@ -4,7 +4,7 @@
 
 const http = require('http');
 
-//´´½¨server
+//åˆ›å»ºserver
 let server = http.createServer();
 
 server.on('request',(req,res)=>{
@@ -13,7 +13,7 @@ server.on('request',(req,res)=>{
     //console.log(req.headers);
     //res.write('ok...');
     res.writeHead(200,'OK',{'Content-type':'text/html;charset=UTF-8'});
-    res.end('²âÊÔ');
+    res.end('æµ‹è¯•ä¸­æ–‡');
 });
 
 server.listen(80);

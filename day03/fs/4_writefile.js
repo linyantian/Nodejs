@@ -5,6 +5,6 @@
 const fs = require('fs');
 const path = require('path');
 
-fs.writeFile(path.join(__dirname,'test.txt'),'data...',(err)=>{
+fs.writeFile(path.join(__dirname,'test.txt'),'data new...',(err)=>{ //п╢нд╪Ч
     if(err) throw err;
 });
